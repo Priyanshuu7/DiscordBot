@@ -1,5 +1,5 @@
 // use for .env file//
-// use for .env file//
+
 require("dotenv").config();
 
 const { Client, GatewayIntentBits } = require("discord.js");
