@@ -1,7 +1,8 @@
 // use for .env file//
-
 require("dotenv").config();
 
+
+// discord credeintials //
 const { Client, GatewayIntentBits } = require("discord.js");
 const client = new Client({
   intents: [
@@ -12,6 +13,7 @@ const client = new Client({
 });
 const token = process.env.DISCORD_BOT_TOKEN;
 
+// create messgae//
 client.on("messageCreate", (message) => {
   if (message.author.bot) return;
   if (message.content.startsWith("create")) {
