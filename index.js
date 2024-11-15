@@ -1,7 +1,6 @@
 // use for .env file//
 require("dotenv").config();
 
-
 // discord credeintials //
 const { Client, GatewayIntentBits } = require("discord.js");
 const client = new Client({
@@ -22,11 +21,14 @@ client.on("messageCreate", (message) => {
       content: "Generated short url id for " + url,
     });
   }
+
+  //bot reply to the message//
   message.reply({
     content: "Heyyyy from bot",
   });
 });
 
+// slash commands//
 client.on("interactionCreate", (interaction) => {
   if (interaction.commandName === "ping") {
     interaction.reply("Pong");
