@@ -1,4 +1,6 @@
 require("dotenv").config();
+
+// use for discord  //
 const { REST, Routes } = require("discord.js");
 const commands = [
   {
@@ -6,6 +8,7 @@ const commands = [
     description: "Replies with Pong!",
   },
 ];
+// use for .env file//
 const token = process.env.DISCORD_BOT_TOKEN;
 const clientId = process.env.CLIENT_ID;
 
