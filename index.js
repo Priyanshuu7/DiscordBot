@@ -24,7 +24,7 @@ client.on("messageCreate", (message) => {
 
   //bot reply to the message//
   message.reply({
-    content: "Heyyyy from bot",
+    content: "Hello Priyanshu Sir",
   });
 });
 
